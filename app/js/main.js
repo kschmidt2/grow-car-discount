@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             Highcharts.chart(chartId, {
                 chart: {
-                    type: 'bar',
+                    type: 'line',
                     styledMode: true,
                     spacingBottom: 25,
                     spacingRight: 100
@@ -53,31 +53,33 @@ document.addEventListener('DOMContentLoaded', function () {
                     text: null
                 },
                 data: {
-                    googleSpreadsheetKey: '1YOKb5l2VM4aAB2r20N_1aT_1vEajYrP3U-U3A6lZbC0'
+                    googleSpreadsheetKey: '19YecaQmh2yNMIlKr7u1A0bbw8T_RjxBjI7WV_DRIe5g',
+                    startColumn: 2,
+                    endColumn: 4
                 },
-                // for bar charts only
-                plotOptions: {
-                    series: {
-                        groupPadding: 0.1
-                    } 
-                },
-                // for line charts only
+                // // for bar charts only
                 // plotOptions: {
                 //     series: {
-                //         lineWidth: 1,
-                //         // clip: false,
-                //         marker: {
-                //             enabled: false,
-                //             symbol: 'circle',
-                //             fillColor: '#ffffff',
-                //             states: {
-                //                 hover: {
-                //                     fillColor: '#ffffff'
-                //                 }
-                //             }
-                //         }
-                //     }
+                //         groupPadding: 0.1
+                //     } 
                 // },
+                // for line charts only
+                plotOptions: {
+                    series: {
+                        lineWidth: 1,
+                        // clip: false,
+                        marker: {
+                            enabled: false,
+                            symbol: 'circle',
+                            fillColor: '#ffffff',
+                            states: {
+                                hover: {
+                                    fillColor: '#ffffff'
+                                }
+                            }
+                        }
+                    }
+                },
                 legend: {
                     align: 'right',
                     symbolRadius: 0,
@@ -91,7 +93,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             whiteSpace: 'nowrap'
                         }
                     },
-                    tickLength: 5
+                    tickLength: 5,
+                    type: 'category'
                 },
                 yAxis: {
                     title: false,
