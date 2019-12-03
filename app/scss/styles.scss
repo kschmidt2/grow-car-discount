@@ -57,6 +57,14 @@ $breakpoint-lg: 717px;
     width: 214px;
     margin-top: 20px;
   }
+
+  & .highcharts-annotation-shapes {
+    circle {
+      fill: none;
+      stroke: $slate-secondary-5;
+      stroke-width: 1.5px;
+    }
+  }
   
 }
 

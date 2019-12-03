@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     type: 'line',
                     styledMode: true,
                     spacingBottom: 25,
-                    spacingRight: 100
+                    spacingRight: 100,
+                    spacingLeft: 0
                 }, 
                 title: {
                     text: null
@@ -93,8 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             whiteSpace: 'nowrap'
                         }
                     },
-                    tickLength: 5,
-                    type: 'category'
+                    tickLength: 5
                 },
                 yAxis: {
                     title: false,
@@ -108,8 +108,122 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 tooltip: {
                     shadow: false,
-                    padding: 10
+                    padding: 10,
+                    valueDecimals: 2,
+                    valueSuffix: '%',
+                    shared: true,
                 },
+                annotations: [{
+                    shapes: [{
+                        point: {
+                            x: 1385856000000, // Dec 2013
+                            y: 8.5, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1385856000000, // Dec 2013
+                            y: 6, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x:  1417392000000, // Dec 2014
+                            y: 6, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x:  1417392000000, // Dec 2014
+                            y: 8.9, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1448928000000, // Dec 2015
+                            y: 6, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1448928000000, // Dec 2015
+                            y: 9.4, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1480550400000, // Dec 2016
+                            y: 6.1, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1480550400000, // Dec 2016
+                            y: 8.9, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1512086400000, // Dec 2017
+                            y: 6.6, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1512086400000, // Dec 2017
+                            y: 8.4, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1543622400000, // Dec 2018
+                            y: 9.0, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }, {
+                        point: {
+                            x: 1543622400000, // Dec 2018
+                            y: 6.7, // value
+                            xAxis: 0, // yAxis INDEX
+                            yAxis: 0 // xAxis INDEX
+                          },
+                        type: 'circle',
+                        r: 5
+                    }],
+                }],
                 responsive: {
                     rules: [{
                     condition: {
